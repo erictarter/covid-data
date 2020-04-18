@@ -111,7 +111,7 @@ select {
 
 @media (max-width: 450px) {
   .header {
-    line-height: 1.2;
+    line-height: 1.5;
   }
 
   select {
