@@ -1,10 +1,14 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { usStatesContext } from '../UsStatesContext';
 
 const SelectState = () => {
+  // values from UsStatsContext
+
   const { allStates, selectedUsState, setSelectedUsState } = useContext(
     usStatesContext
   );
+
+  // Onchange calls this function to set selected item
 
   const setUsState = e => {
     setSelectedUsState(e.target.value);
